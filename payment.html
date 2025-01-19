@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bán Hàng</title>
+    <link rel="stylesheet" href="style-cartegory.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="assets/logo.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="cartegory.php">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="cart.html">Giỏ hàng</a>
+                </div>
+                <div class="item">
+                    <a href="delivery.html">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="payment.html">Thanh toán</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------- Payment ------------->
+<section class="payment">
+    <div class="container">
+        <div class="payment-top-wrap">
+            <div class="payment-top">
+                <div class="payment-top-delivery payment-top-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="payment-top-adress payment-top-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="payment-top-payment payment-top-item">
+                    <i class="fa-regular fa-credit-card"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="payment-content row">
+            <div class="payment-content-left">
+                <div class="payment-content-left-method-delivery">
+                    <p style="font-weight: bold;">Phương thức giao hàng</p>
+                    <div class="payment-content-left-method-delivery-item">
+                        <input type="radio">
+                        <label for="">Giao hàng chuyển phát nhanh</label>
+                    </div>
+                </div>
+                <div class="payment-content-left-method-payment">
+                    <p style="font-weight: bold;">Phương thức thanh toán</p>
+                    <p>Mọi giao dich đều được bảo mật và mã hóa</p>
+                    <div class="payment-content-left-method-payment-item">
+                        <input name="method-payment" type="radio">
+                        <label for="">Thanh toán thẻ tín dụng</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item-img">
+                        <img src="assets/visa.png" alt="">
+                    </div>
+                    <div class="payment-content-left-method-payment-item">
+                        <input checked name="method-payment" type="radio">
+                        <label for="">Thanh toán bằng thẻ ATM</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item">
+                        <input name="method-payment" type="radio">
+                        <label for="">Thanh toán Momo</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item">
+                        <input name="method-payment" type="radio">
+                        <label for="">Thanh toán khi giao hàng</label>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-content-right">
+                <div class="payment-content-right-button">
+                    <input type="text" placeholder="Mã giảm giá/Quà tặng">
+                    <button><i class="fa-solid fa-check"></i></button>
+                </div>
+                <div class="payment-content-right-button">
+                    <input type="text" placeholder="Mã nhân viên hỗ trợ">
+                    <button><i class="fa-solid fa-check"></i></button>
+                </div>
+                <div class="payment-content-right-mnv">
+                    <select name="" id="">
+                        <option value="">Chọn mã nv thân thiết</option>
+                        <option value="">A125</option>
+                        <option value="">B246</option>
+                        <option value="">C258</option>
+                        <option value="">D124</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="payment-content-right-payment">
+            <button>TIẾP TỤC THANH TOÁN</button>
+        </div>
+    </div>
+</section>
+<!---------------------- Footer -------------->
+<div id="footer">
+    <div class="box">
+        <div class="logo">
+            <img src="assets/logo.png" alt="">
+        </div>
+        <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+    </div>
+    <div class="box">
+        <h3>NỘI DUNG</h3>
+        <ul class="quick-menu">
+            <div class="item">
+                <a href="">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="">Sản phẩm</a>
+            </div>
+            <div class="item">
+                <a href="">Blog</a>
+            </div>
+            <div class="item">
+                <a href="">Liên hệ</a>
+            </div>
+        </ul>
+    </div>
+    <div class="box">
+        <h3>LIÊN HỆ</h3>
+        <form action="">
+            <input type="text" placeholder="Địa chỉ email">
+            <button>Nhận tin</button>
+        </form>
+    </div>
+</div>
+</div>
+<script src="script-cart.js"></script>
+</body>
+
+</html>

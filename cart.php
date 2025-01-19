@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bán Hàng</title>
+    <link rel="stylesheet" href="style-cartegory.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="assets/logo.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="cartegory.php">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="cart.html">Giỏ hàng</a>
+                </div>
+                <div class="item">
+                    <a href="delivery.html">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="payment.html">Thanh toán</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------- Cart -------------->
+<section class="cart">
+    <div class="container">
+        <div class="cart-top-wrap">
+            <div class="cart-top">
+                <div class="cart-top-cart cart-top-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="cart-top-adress cart-top-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="cart-top-payment cart-top-item">
+                    <i class="fa-regular fa-credit-card"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cart-content row">
+            <div class="cart-content-left">
+                <table>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <!-- <th>Màu</th> -->
+                        <th>Size</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th>Xóa</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="cart-content-right">
+                <table>
+                    <tr>
+                        <th colspan="2">Tổng tiền giỏ hàng</th>
+                    </tr>
+                    <tr>
+                        <td>TỔNG SẢN PHẨM</td>
+                    </tr>
+                    <tr>
+                        <td>TỔNG TIỀN HÀNG</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>TẠM TÍNH</td>
+                        <td style="color: black; font-weight: bold;"><p>400.000<sup>đ</sup></p></td>
+                    </tr> -->
+                </table>
+                <div class="cart-content-right-text">
+                    <p>Bạn sẽ được miễn phí ship khi đơn hàng của bạn có tổng giá trị hóa đơn trên 2.000.000<sup>đ</sup></p>
+                    <p style="color: red; font-weight: bold;">Mua thêm <span style="font-size: 18px;">1.600.000đ</span> để được miễn phí ship</p>
+                </div>
+                <div class="cart-content-right-button">
+                    <button onclick="redirectToPayment1()">TIẾP TỤC MUA HÀNG</button>
+                    <button onclick="redirectToPayment2()">THANH TOÁN</button>
+                    <button onclick="confirmCart()">XÁC NHẬN</button>
+                </div>
+                <div class="cart-content-right-dangnhap">
+                    <p>TÀI KHOẢN</p> <br>
+                    <p>Hãy <a href="">Đăng nhập</a> tài khoản của bạn để tích điểm thành viên</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function redirectToPayment1() {
+        window.location.href = 'cartegory.php';
+    }
+    function redirectToPayment2() {
+        window.location.href = 'delivery.html';
+    }
+</script>
+<!-- <script>
+    // Hàm để hiển thị các sản phẩm trong giỏ hàng
+    function displayCart() {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let cartTable = document.querySelector('.cart-content-left table');
+
+        // Xóa các hàng đã có trong bảng
+        cartTable.innerHTML = '';
+
+        // Duyệt qua các sản phẩm trong giỏ hàng và hiển thị trên bảng
+        cart.forEach(item => {
+            let row = `
+                <tr>
+                    <td><img src="assets/Product_1.png" alt="Đồ ăn"></td>
+                    <td><p>${item.name}</p></td>
+                    <td><p>${item.size}</p></td>
+                    <td><input type="number" value="${item.quantity}" min="1"></td>
+                    <td><p>${item.price}<sup>đ</sup></p></td>
+                    <td><span>X</span></td>
+                </tr>
+            `;
+            cartTable.innerHTML += row;
+        });
+    }
+
+    // Gọi hàm displayCart khi trang được tải
+    displayCart();
+</script> -->
+
+<!---------------------- Footer -------------->
+<div id="footer">
+    <div class="box">
+        <div class="logo">
+            <img src="assets/logo.png" alt="">
+        </div>
+        <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+    </div>
+    <div class="box">
+        <h3>NỘI DUNG</h3>
+        <ul class="quick-menu">
+            <div class="item">
+                <a href="">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="">Sản phẩm</a>
+            </div>
+            <div class="item">
+                <a href="">Blog</a>
+            </div>
+            <div class="item">
+                <a href="">Liên hệ</a>
+            </div>
+        </ul>
+    </div>
+    <div class="box">
+        <h3>LIÊN HỆ</h3>
+        <form action="">
+            <input type="text" placeholder="Địa chỉ email">
+            <button>Nhận tin</button>
+        </form>
+    </div>
+</div>
+</div>
+<script src="script-cart.js"></script>
+<script>
+    // Gọi hàm hiển thị giỏ hàng khi trang được tải
+    window.onload = displayCart;
+</script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bán Hàng</title>
+    <link rel="stylesheet" href="style-cartegory.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="assets/logo.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="cartegory.php">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="cart.html">Giỏ hàng</a>
+                </div>
+                <div class="item">
+                    <a href="delivery.html">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="payment.html">Thanh toán</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------- Product -------------->
+    <section class="product">
+        <div class="container">
+            <div class="product-top row">
+                <p style="font-weight: bold; font-size: 14px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">SẢN PHẨM</p>
+                <!-- <p>Sản phẩm</p> <span>&#10230;</span>
+                <p>BEST SELLER</p> -->
+            </div>
+            <div class="product-content row">
+                <div class="product-content-left row">
+                    <div class="product-content-left-big-img">
+                        <img src="assets/img_1.png" alt="Đồ ăn">
+                    </div>
+                    <div class="product-content-left-small-img">
+                        <img src="assets/img_1.png" alt="Đồ ăn">
+                        <img src="assets/img_1.png" alt="Đồ ăn">
+                        <img src="assets/img_1.png" alt="Đồ ăn">
+                        <img src="assets/img_1.png" alt="Đồ ăn">
+                    </div>
+                </div>
+                <div class="product-content-right">
+                    <div class="product-content-right-name">
+                        <h1>Cơm gà</h1>
+                        <p>MSP: 200012</p>
+                    </div>
+                    <div class="product-content-right-price">
+                        <p>35.000<sup>đ</sup></p>
+                    </div>
+                    <!-- <div class="product-content-right-color">
+                        <p><span style="font-weight: bold;">Độ cay: </span>cấp 3 <span style="color:red;">*</span></p>
+                        <div class="product-content-right-color-img">
+                            <img src="assets/red.png" alt="">
+                        </div>
+                    </div> -->
+                    <div class="product-content-right-size">
+                        <p style="font-weight: bold;">SIZE</p>
+                        <div class="size">
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <p style="font-weight: bold;">Số lượng: </p>
+                        <input type="number" min="0" value="1">
+                    </div>
+                    <p style="color: red;">Vui lòng chọn size</p>
+                    <div class="product-content-right-button">
+                        <button onclick="addToCart()"><i class="fa-solid fa-cart-shopping"></i><p>MUA HÀNG</p></button>
+                        <button><p>TÌM TẠI CỬA HÀNG </p></button>
+                    </div>
+                    <div class="product-content-right-icon">
+                        <div class="product-content-right-icon-item">
+                            <i class="fa-solid fa-phone"></i><p>Hotline</p>
+                        </div>
+                        <div class="product-content-right-icon-item">
+                            <i class="fa-regular fa-comment"></i><p>Chat</p>
+                        </div>
+                        <div class="product-content-right-icon-item">
+                            <i class="fa-regular fa-envelope"></i><p>Mail</p>
+                        </div>
+                    </div>
+                    <div class="product-content-right-bottom">
+                        <div class="product-content-right-bottom-top">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div class="product-content-right-bottom-big">
+                            <div class="product-content-right-bottom-title row">
+                                <div class="product-content-right-bottom-title-item chitiet">
+                                    <p>Chi tiết</p>
+                                </div>
+                                <div class="product-content-right-bottom-title-item baoquan">
+                                    <p>Bảo quản</p>
+                                </div>
+                                <!-- <div class="product-content-right-bottom-title-item">
+                                    <p>Tham khảo</p>
+                                </div> -->
+                            </div>
+                            <div class="product-content-right-bottom-content">
+                                <div class="product-content-right-bottom-content-chitiet">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, ratione odit accusamus dolor beatae culpa suscipit esse quod deleniti. Quaerat, earum non. Numquam, in. Similique pariatur mollitia architecto sit assumenda.</p>
+                                </div>
+                                <div class="product-content-right-bottom-content-baoquan">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus provident harum iste ratione nisi exercitationem facilis, veritatis suscipit quaerat culpa sunt, rem, quas consectetur accusantium beatae dolores dicta! Perferendis, similique.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function addToCart() {
+            // Lấy thông tin sản phẩm
+            let productName = "Cơm gà xối mỡ"; // Thay bằng lấy tên sản phẩm thực tế
+            let productSize = "M"; // Thay bằng lấy kích cỡ sản phẩm thực tế
+            let productPrice = 200000; // Thay bằng lấy giá sản phẩm thực tế
+    
+            // Tạo đối tượng sản phẩm
+            let item = {
+                name: productName,
+                size: productSize,
+                price: productPrice,
+                quantity: 1
+            };
+    
+            // Kiểm tra nếu giỏ hàng đã tồn tại trong localStorage
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+            // Thêm sản phẩm vào giỏ hàng
+            cart.push(item);
+    
+            // Cập nhật localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+    
+            // Chuyển hướng đến trang giỏ hàng
+            window.location.href = 'cart.html';
+        }
+    </script>
+    
+    <!----------------------- product-related --------------->
+    <section class="product-related container">
+        <div class="product-related-title">
+            <p>SẢN PHẨM LIÊN QUAN</p>
+        </div>
+        <div class="product-content row">
+            <div class="product-related-item">
+                <img src="assets/img_2.png" alt="" width="85px" height="220px">
+                <h1>Pizza gà</h1>
+                <p>250.000<sup>đ</sup></p>
+            </div>
+            <div class="product-related-item">
+                <img src="assets/img_3.png" alt="" width="85px" height="220px">
+                <h1>Cá hồi sốt rượu vang</h1>
+                <p>200.000<sup>đ</sup></p>
+            </div>
+            <div class="product-related-item">
+                <img src="assets/Product_2.png" alt="" width="85px" height="220px">
+                <h1>Mì trứng thịt</h1>
+                <p>40.000<sup>đ</sup></p>
+            </div>
+            <div class="product-related-item">
+                <img src="assets/Product_3.png" alt="" width="85px" height="220px">
+                <h1>Bún chay</h1>
+                <p>50.000<sup>đ</sup></p>
+            </div>
+            <div class="product-related-item">
+                <img src="assets/Product_4.png" alt="" width="85px" height="220px">
+                <h1>Hamburger</h1>
+                <p>100.000<sup>đ</sup></p>
+            </div>
+        </div>
+    </section>
+    <!---------------------- Footer -------------->
+    <div id="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+        </div>
+        <div class="box">
+            <h3>NỘI DUNG</h3>
+            <ul class="quick-menu">
+                <div class="item">
+                    <a href="">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="">Liên hệ</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>LIÊN HỆ</h3>
+            <form action="">
+                <input type="text" placeholder="Địa chỉ email">
+                <button>Nhận tin</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="script-cart.js"></script>
+</body>
+
+</html>
